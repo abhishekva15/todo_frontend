@@ -1,0 +1,294 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+
+label {
+  font-size: 20px;
+}
+
+html, body{
+  width: 100%;
+  height: 100% ;
+}
+
+/* body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.container{
+  
+  margin-left: 35%;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 32px 48px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  /* box-shadow: 8px 8px 24px 0px rgba(66, 68, 98 ,1); */
+  box-shadow: 4px 4px 12px 0px rgba(66, 68, 98 ,1);
+}
+
+.container > h1{
+  margin-bottom: 20px;
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cntainer div {
+  display: flex;
+  flex-direction: column;
+}
+
+.container input{
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.container input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+}
+
+button {
+  /* background-color: black;
+  border: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0; */
+  background-color: black; /* Primary button color */
+border: none;
+color: white;
+padding: 10px 20px;
+margin: 0 5px;
+/* margin-inline: 80px; */
+cursor: pointer;
+border-radius: 4px;
+font-size: 16px;
+transition: background-color 0.3s ease;
+
+}
+
+.spn {
+  color: blue;
+  cursor: pointer;
+}
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.create_form input {
+  width: 85vh;
+  border: none;
+  padding: 10px;
+  border-bottom: 2px solid;
+  outline: none;
+}
+
+.create_form button {
+  padding:10px;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  width: 100vh;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  height: 35px;
+  padding: 2px 5px 2px 5px;
+  margin-top: 10px;
+}
+
+.checkBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 10px;
+}
+
+.checkBox .icon {
+  margin-right: 15px;
+
+  font-size: 15px;
+}
+
+.task div span {
+  margin: 0px 5px 0px 4px;
+}
+
+.task div .icon {
+  cursor: pointer;
+}
+
+.des {
+  display: flex;
+  width: 65vh;
+}
+
+.todoName {
+  font-size: 2.5rem;
+}
+
+/* .nav{
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 50px;
+  margin-top: 20px;
+  
+} */
+
+/* .nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+margin-inline: 50px;
+padding: 10px 20px; 
+
+color:black; 
+
+
+} */
+
+
+
+.nav button:hover {
+color: rgb(255, 255, 255) /* Change color on hover (tomato) */
+
+}
+
+
+/* Ensure the pagination container is always at the bottom of the content */
+/* .home {
+position: relative;
+min-height: 100vh; /* Full viewport height */
+/* padding-bottom: 50px; Space for pagination at the bottom */
+/* }  */
+
+
+/* Pagination container styling */
+.pagination {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px 0;
+background: #f9f9f9; /* Background color for the pagination area */
+border-top: 1px solid #ddd; /* Border on top for separation */
+box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for a bit of depth */
+}
+
+/* Pagination button styling */
+.pagination button {
+background-color: black; /* Primary button color */
+border: none;
+color: white;
+padding: 10px 20px;
+margin: 0 5px;
+margin-inline: 80px;
+cursor: pointer;
+border-radius: 4px;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+/* Button hover and active states */
+.pagination button:hover {
+background-color: black; /* Darker color on hover */
+}
+
+.pagination button:disabled {
+background-color: #d6d6d6; /* Gray color for disabled buttons */
+cursor: not-allowed;
+}
+
+/* Page number display */
+.pagination span {
+margin: 0 10px;
+font-size: 16px;
+color: #333;
+}
+
+/* Navigation bar styling */
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+padding: 10px 20px; /* Padding inside the nav */
+background-color: #f8f9fa; /* Light background color */
+border-bottom: 1px solid #ddd; /* Bottom border for separation */
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for a bit of depth */
+}
+
+
+.toaster{
+  margin-top: 50px;
+}
+
+/* Styling for navigation buttons */
+.nav button {
+background-color: black; /* Primary button color */
+border: none;
+color: white;
+padding: 8px 16px;
+margin: 0 5px;
+cursor: pointer;
+border-radius: 4px;
+font-size: 16px;
+transition: background-color 0.3s ease;
+}
+
+/* Button hover and active states */
+
+
+.nav button:disabled {
+background-color: #d6d6d6; /* Gray color for disabled buttons */
+cursor: not-allowed;
+}
+
+/* Styling for the navigation title */
+.nav h1 {
+font-size: 24px; /* Font size for the title */
+margin: 0; /* Remove default margin */
+color: #333; /* Dark color for the title text */
+}
+
+.spiner {
+  margin-top: 100px;
+}
+
+.no_record{
+  margin-top: 100px;
+}
